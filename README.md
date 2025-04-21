@@ -94,6 +94,15 @@ Despite its importance, the Constitution faces limited usage due to:
 ## 📷 Output Examples
 
 
+### 🖼️ Output 1
+![Output 1](./Output1.png)
+
+### 🖼️ Output 2
+![Output 2](./Output2.jpg)
+
+### 🖼️ Output 3
+![Output 3](./Output3.jpg)
+
 
 
 ---
