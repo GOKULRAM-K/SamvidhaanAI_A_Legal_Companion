@@ -3,9 +3,9 @@
 > **Course**: Artificial Intelligence (BCSE306L)  
 > **Faculty Guide**: Dr. Vijayalakshmi A  
 > **Team Members**:
-> - Gokul Ram K – 23BAI1462  
-> - Kishore A G – 23BAI1577  
-> - Shyam Karthinathan P K – 23BAI1394
+> - Gokul Ram K – 23BAI1462 - gokul.ram.kannan210905@gmail.com
+> - Kishore A G – 23BAI1577 - kishore.ag2023@vitstudent.ac.in
+> - Shyam Karthinathan P K – 23BAI1394 - shyamkarthinathan.pk2023@vitstudent.ac.in
 
 ---
 
