@@ -1,122 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SamvidhaanAI: A Legal Companion Chatbot</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
-        h1, h2, h3 { color: #2c3e50; }
-        ul { margin-top: 0; }
-        code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
-        .section { margin-bottom: 40px; }
-    </style>
-</head>
-<body>
-    <h1>SamvidhaanAI: A Legal Companion Chatbot using Retrieval-Augmented Generation (RAG) and Gemini AI</h1>
+# SamvidhaanAI: A Legal Companion Chatbot using Retrieval-Augmented Generation (RAG) and Gemini AI
 
-    <p><strong>Artificial Intelligence (BCSE306L)</strong><br>
-    <strong>Faculty Name:</strong> Dr. Vijayalakshmi A<br>
-    <strong>Team Members:</strong><br>
-    Gokul Ram K – 23BAI1462<br>
-    Kishore A G – 23BAI1577<br>
-    Shyam Karthinathan P K – 23BAI1394</p>
+> **Course**: Artificial Intelligence (BCSE306L)  
+> **Faculty Guide**: Dr. Vijayalakshmi A  
+> **Team Members**:
+> - Gokul Ram K – 23BAI1462  
+> - Kishore A G – 23BAI1577  
+> - Shyam Karthinathan P K – 23BAI1394
 
-    <div class="section">
-        <h2>1. Abstract</h2>
-        <p>SamvidhaanAI is a legal chatbot designed to improve accessibility to the Indian Constitution using a Retrieval-Augmented Generation (RAG) pipeline powered by Google's Gemini AI. The system semantically embeds constitutional content using Google’s embedding model and retrieves relevant sections through a vector database (ChromaDB). On top of this, Gemini AI interprets and generates accurate, structured legal responses. This project combines Python, LangChain, and Streamlit to offer an intelligent interface that transforms how users interact with complex legal documents.</p>
-    </div>
+---
 
-    <div class="section">
-        <h2>2. Introduction</h2>
-        <p>The Indian Constitution poses challenges for interpretation due to its intricate legal language and massive structure. Citizens often struggle to grasp its provisions. SamvidhaanAI addresses this by using AI with a conversational interface to offer grounded, contextually coherent legal responses.</p>
-    </div>
+## 🧠 Abstract
+**SamvidhaanAI** is a legal chatbot designed to improve accessibility to the Indian Constitution using a Retrieval-Augmented Generation (RAG) pipeline powered by **Google's Gemini AI**. It uses semantic embeddings, ChromaDB for retrieval, and LangChain for orchestration, all presented via an interactive **Streamlit** interface. This AI-driven system aims to bridge the gap between citizens and complex legal information.
 
-    <div class="section">
-        <h2>3. Problem Statement</h2>
-        <ul>
-            <li>Complex Legal Language</li>
-            <li>Massive Volume</li>
-            <li>Limited Intelligent Tools</li>
-        </ul>
-    </div>
+---
 
-    <div class="section">
-        <h2>4. Our Solution</h2>
-        <ul>
-            <li>RAG-based context-aware answers</li>
-            <li>Semantic Embeddings</li>
-            <li>Contextual Memory</li>
-            <li>Interactive Frontend using Streamlit</li>
-        </ul>
-    </div>
+## 📌 Introduction
+The Indian Constitution, while comprehensive, is challenging to interpret due to its:
+- Dense legal language
+- Massive structure with hundreds of articles and amendments
 
-    <div class="section">
-        <h2>5. Technical Architecture and Concepts</h2>
-        <h3>a. RAG</h3>
-        <p>Uses a retriever and Gemini generator to provide grounded answers from the Constitution.</p>
-        <h3>b. Embeddings</h3>
-        <p>Google’s <code>embedding-001</code> to convert constitutional chunks to vectors.</p>
-        <h3>c. Vector Store - ChromaDB</h3>
-        <ul>
-            <li>Efficient similarity search</li>
-            <li>Persistence</li>
-            <li>LangChain integration</li>
-            <li>Local hosting</li>
-        </ul>
-        <h3>d. Similarity Search</h3>
-        <p>Cosine similarity with top-k = 10 for document retrieval.</p>
-        <h3>e. Language Model</h3>
-        <ul>
-            <li>Gemini 1.5 Pro</li>
-            <li>Structured Output</li>
-            <li>Multimodal potential</li>
-            <li>Low hallucination rate</li>
-        </ul>
-    </div>
+**SamvidhaanAI** solves this by offering a smart, conversational legal assistant built on modern AI, making constitutional knowledge interactive and easy to access.
 
-    <div class="section">
-        <h2>6. Implementation</h2>
-        <ol>
-            <li>Parsed and chunked Constitution</li>
-            <li>Embedded chunks into ChromaDB</li>
-            <li>Top 10 chunks retrieved using similarity search</li>
-            <li>Gemini generated response using context</li>
-            <li>Displayed via Streamlit with session memory</li>
-        </ol>
+---
 
-        <h3>Component | Tool/Technology</h3>
-        <ul>
-            <li>Backend: Python</li>
-            <li>AI Framework: LangChain</li>
-            <li>Embeddings: Google Gen AI (<code>embedding-001</code>)</li>
-            <li>Vector Store: ChromaDB</li>
-            <li>PDF Parsing: PyPDFLoader</li>
-            <li>LLM: Gemini 1.5 Pro</li>
-            <li>Interface: Streamlit</li>
-            <li>Memory: Session-based history</li>
-        </ul>
-    </div>
+## ❗ Problem Statement
+Despite its importance, the Constitution faces limited usage due to:
+- ⚖️ Complex legal jargon
+- 📚 Enormous volume
+- 🧩 Lack of intelligent, accessible tools for laypersons
 
-    <div class="section">
-        <h2>7. Output</h2>
-        <p>Note: Some answers were cut to fit the Word document due to length.</p>
-    </div>
+---
 
-    <div class="section">
-        <h2>8. Conclusion</h2>
-        <p>SamvidhaanAI shows how RAG can democratize access to complex legal knowledge like the Indian Constitution. It grounds responses in source documents and uses conversational memory to guide users intelligently and accurately.</p>
-    </div>
+## ✅ Our Solution
+**SamvidhaanAI** offers:
+- 🔍 **RAG Pipeline**: Combines retrieval + generation for grounded legal responses
+- 🧠 **Semantic Embeddings**: Captures meaning beyond keywords
+- 🧾 **Contextual Memory**: Maintains multi-turn conversations
+- 💬 **Interactive Frontend**: Streamlit-powered user interface
 
-    <div class="section">
-        <h2>9. Future Enhancements</h2>
-        <ul>
-            <li>Expand knowledge base to include case laws</li>
-            <li>Add multilingual support</li>
-            <li>Enable scalable cloud deployment</li>
-            <li>Integrate user feedback for learning</li>
-        </ul>
-        <p><strong>SamvidhaanAI</strong> represents a step toward digital democracy and AI-driven public empowerment.</p>
-    </div>
-</body>
-</html>
+---
+
+## ⚙️ Technical Architecture
+
+### 🧩 Retrieval-Augmented Generation (RAG)
+- **Retriever**: Fetches top relevant document chunks
+- **Generator**: Gemini AI creates coherent, fact-grounded responses
+
+### 🧠 Embeddings
+- Using embedding-001 from Google Generative AI
+- Converts text to vectors for semantic matching
+
+### 🗃️ Vector Store: ChromaDB
+- ✅ Real-time similarity search
+- 💾 Embedding persistence
+- 🔗 Seamless with LangChain
+- 🏠 Works offline (local hosting)
+
+### 📐 Similarity Search
+- **Cosine Similarity** with Top-k = 10
+- Measures angle between vectors to find semantically closest chunks
+
+### 🤖 Language Model: Gemini 1.5 Pro
+- 🔍 Long-context understanding
+- 🧾 Structured and formal outputs
+- 🗣️ Supports future multilingual use
+- 🚫 Reduced hallucination risk
+
+---
+
+## 🛠️ Implementation Steps
+```text
+1. Parse the Constitution PDF → split into 2000-character chunks (with overlap)
+2. Generate embeddings for each chunk → store in ChromaDB
+3. On user query → retrieve top 10 similar chunks
+4. Feed context + query into Gemini → generate response
+5. Display output in Streamlit → maintain session memory
+```
+
+### 🧰 Tools & Technologies
+| Component      | Tool/Technology                 |
+|----------------|-------------------------------|
+| Backend        | Python                        |
+| AI Framework   | LangChain                     |
+| Embeddings     | Google GenAI (embedding-001)  |
+| Vector Store   | ChromaDB                      |
+| PDF Parsing    | PyPDFLoader                   |
+| LLM            | Gemini 1.5 Pro                |
+| Interface      | Streamlit                     |
+| Memory         | Session-based conversations   |
+
+---
+
+## 📷 Output Examples
+
+
+
+
+---
+
+## 🧾 Conclusion
+**SamvidhaanAI** showcases the potential of RAG-based chatbots to democratize access to complex legal documents like the Indian Constitution. By grounding answers in contextually relevant content and maintaining user conversation flow, the tool becomes both educational and empowering.
+
+---
+
+## 🚀 Future Enhancements
+- 📚 **Expand knowledge base**: Add more legal texts & landmark judgments
+- 🌐 **Multilingual support**: Hindi, Tamil, Telugu, etc.
+- ☁️ **Cloud Deployment**: For wider public use
+- 📈 **Feedback Loop**: Improve with real user feedback
+
+---
+
+> 🏛️ *SamvidhaanAI is more than a technical project—it's a mission to build digital democracy through accessible legal intelligence.*
