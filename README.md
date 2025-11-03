@@ -1,7 +1,7 @@
 # SamvidhaanAI: A Legal Companion Chatbot using Retrieval-Augmented Generation (RAG) and Gemini AI
 
 > **Gokul Ram K** – 23BAI1462 - gokul.ram.kannan210905@gmail.com/ gokulram.k2023@vitstudent.ac.in
-
+> **LinkedIn** - https://www.linkedin.com/in/gokul-ram-k-277a6a308
 ## 🧠 Abstract
 **SamvidhaanAI** is a legal chatbot designed to improve accessibility to the Indian Constitution using a Retrieval-Augmented Generation (RAG) pipeline powered by **Google's Gemini AI**. It uses semantic embeddings, ChromaDB for retrieval, and LangChain for orchestration, all presented via an interactive **Streamlit** interface. This AI-driven system aims to bridge the gap between citizens and complex legal information.
 
